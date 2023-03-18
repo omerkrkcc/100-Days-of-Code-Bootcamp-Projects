@@ -1,0 +1,49 @@
+print('''
+https://ascii.co.uk/art
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+cross_road = input("You're at a cross road. Where do you want to go? Type 'left' or 'right' ")
+cross_road_controller = cross_road.lower()
+if cross_road_controller == "left":
+  king_soldiers = input("You have been captured by the king's soldiers. You will be taken to the king's palace. Escape or accept your fate? Type 'escape' or 'go with the  soldiers' ")
+  king_soldiers_controller = king_soldiers.lower()
+  if king_soldiers_controller == 'go with the soldiers':
+    treasure = input("With the cooperation of the king, you managed to extract the treasure. But the king hid the treasure behind one of the 3 different doors in order not to share it with you. Which door do you want to choose? Type 'red' or 'blue' or 'yellow' ")
+    treasure_controller = treasure.lower()
+    if treasure_controller == 'blue':
+      print("The king imprisoned you in a room full of crocodiles. You lose")
+    elif treasure_controller == 'red':
+      print("the king had you killed by the soldiers. You lose")
+    else:
+      print("The king appreciated you. And he gave you half of the treasure.")
+  else:
+    print("you were killed by the arrow shot by the archer while fleeing")
+else:
+  print("you were killed by bandits on the way to the treasure.")
+
